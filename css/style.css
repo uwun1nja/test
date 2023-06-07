@@ -1,0 +1,407 @@
+*{
+  margin: 0%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+  background-color: black;
+}
+
+header {
+  padding: 20px 0;
+  background: url("../img/man.png") no-repeat;
+  height: 100vh;
+}
+.menu__item:hover{
+  color: rgb(146, 144, 144);
+}
+.header__info {
+  margin: 120px 0 0 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+}
+
+.header__info span {
+  font-size: 48px;
+}
+
+.header__info p {
+  max-width: 564px;
+}
+
+.fl {
+  display: flex;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.ai-c {
+  align-items: center;
+}
+.ta-c{
+  text-align: center;
+}
+.gap-lg {
+  gap: 3em;
+}
+
+.gap-medium {
+  gap: 2em;
+}
+
+.gap-small {
+  gap: 10px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 100%;
+}
+.left-side {
+  background-size: cover;
+}
+.navbar-menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  padding: 0 ;
+  display: flex;
+  gap: 150px;
+}
+.navbar-menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.navbar-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.navbar-logo {
+  font-size: 48px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.text-white {
+  color: white;
+}
+.banner {
+  width: 565px;
+  margin-left: auto;
+}
+.btn {
+  display: flex;
+  height: 50px;
+  width: 230px;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 18px;
+  color: aliceblue;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+/* обо мне */
+.about-me {
+  margin: 5% 0;
+  background-color: black;
+}
+.about-text {
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.about-text p {
+  max-width: 677px;
+}
+.title-about {
+  margin-right: auto;
+}
+/* Блок портфолио */
+.portfolio {
+  margin: 10% 0;
+}
+
+.port-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 350px;
+  border-bottom: 1px gray solid;
+}
+.line-feed{
+  display: flex;
+  margin: 0 0 65px 0;
+}
+/* блок отзывов */
+.name-feed {
+  margin: 5% 0;
+}
+/* слайдер */
+.swiper{
+  width: 1000px;
+  height: 100%;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img{
+  width: 58%;
+  object-fit: cover;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 140px !important; 
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 140px !important; 
+  right: auto;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* блок контактов */
+.contacts {
+  margin-top: 20%;
+  justify-content: center;
+  padding: 0 50px;
+  margin-bottom: 20%;
+}
+.contact-title{
+  visibility: hidden;
+}
+.block-contact {
+  justify-content: center;
+  flex-flow: column;
+  height: auto;
+  width: auto;
+  border-right: 1px solid var(--grey);
+}
+
+.border-center {
+  margin: 0 60px;
+  height: 150px;
+  border-right: 1px gray solid;
+}
+/* футер */
+/* адаптив */
+@media(max-width: 768px) {
+  body {
+    width: 600px;
+  }
+}
+/* Создаю бургер меню*/
+  /* скрываем чекбокс */
+      #menu__toggle {
+        opacity: 0;
+      }
+@media (max-width: 1200px)
+  {
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    justify-content: flex-end;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    
+  }
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu-burger {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked~.menu-burger {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    transition-duration: .25s;
+  }
+  .menu-burger {
+    transition-duration: .25s;
+  }
+  .menu__item {
+    transition-duration: .25s;
+  }
+}
+@media (max-width: 1368px){
+  .header{
+    background: none;
+  }
+  .header__info{
+    margin: 120px 0 30px 0px;
+  }
+  .border-center{
+    border: none;
+  }
+  .contacts{    
+    flex-direction: column;
+  }
+  header{
+    margin: 0 0 15px 0;
+    height: auto;
+  }
+}
+@media(max-width: 768px){
+   .contacts{
+    width: 50%;
+   } 
+   .footer-one{
+    width: 50%;
+   }
+   .feedback{
+    width: 50%;
+   }
+   .text-adaptive{
+    width: 60%;
+   }
+   .container{
+    text-align: left;
+   }
+   .footer-one{
+    display: inline-block;
+  }
+  .photo-adaptive{
+    width: 70%;
+    height: auto;
+  }
+}
+
+.text-adaptive-two{
+  width: 100%;
+}

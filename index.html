@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/script.js">
+  <title>AG</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header fw-w">
+    <div class="container fl fw-w">
+      <div class="navbar">
+        <div class="left-side">
+          <a href="#" class="navbar-logo">AG</a>
+        </div>
+        <div class="hamburger-menu fl">
+          <input id="menu__toggle" type="checkbox">
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="navbar-menu menu-burger">
+            <li><a href="#about__me" class="menu__item">Обо мне</a></li>
+            <li><a href="#portfolio-id" class="menu__item">Портфолио</a></li>
+            <li><a href="#contact-id" class="menu__item">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__info">
+        <div class="header__title text-adaptive">
+          <span>Афанасий</span>
+          <h1>Грибоедов</h1>
+        </div>
+        <p class="text-adaptive">Работая и обучаясь у мировых художников, таких как Джон Мейсон, Стивен Феррел, Стэнли
+          Фингерстоун и Пьер де
+          Фонтанье, во время своего фотографического пребывания в Нью-Йорке, Райан, несомненно, является настоящим
+          мастером, способным видеть красоту в обычных вещах.</p>
+        <a href="#portfolio-id " class="btn">Портфолио</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- Блок обо мне -->
+    <section id="about__me" class="about-me text-white fl">
+      <div class="container">
+        <div class="about-info fl ai-c fw-w">
+          <div class="about-text">
+            <h2 class="title-about text-adaptive">Обо мне</h2>
+            <p class="text-adaptive">Работал практически с любыми видами фотосъемки: от съемки для каталога товаров до
+              свадебных фотосессий.
+              Профессионально занимаюсь фотографией уже более 7 лет, а до этого долгое время это было моим большим
+              увлечением
+            </p>
+          </div>
+          <div class="photo-adaptive">
+            <img src="assets/img/Group1.png" class="photo-adaptive" alt="all-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Блок Портфолио -->
+    <section id="portfolio-id" class="portfolio ">
+      <div class="container">
+        <h2 class="text-white">Портфолио</h2>
+        <div class="port-title"></div>
+        <div class=" fl fw-w">
+          <div class="fl fd-col">
+            <img src="assets/img/портфолио/изображение1.png" alt="one-photo" class="">
+            <img src="assets/img/портфолио/изображение2.png" alt="two-photo" class="">
+          </div>
+          <div class="fl img-universe">
+            <img src="assets/img/портфолио/изображение3.png" alt="three-photo" class="photo-adaptive">
+          </div>
+          <div class="fl fd-col">
+            <img src="assets/img/портфолио/изображение4.png" alt="fousr-photo" class="">
+            <img src="assets/img/портфолио/изображение5.png" alt="five-photo" class="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок отзывы  -->
+    <!-- слайдер -->
+    <section>
+      <div class="container ">
+        <div class="text-white gap-medium ">
+          <div class="gap-medium feedback">
+            <h2 class="ta-c">Отзывы</h2>
+            <div class="ai-c"></div>
+          </div>
+          <div class="line-feed"></div>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+            slides-per-view="3">
+            <swiper-slide>
+              <h3 class="name-feed">Ольга</h3>
+              <p>Спасибо за позитивную съемку и хорошее настроение!Илья сегодня весь вечер рекламирует Ваши
+                услуги.Рассказывая
+                родственникам, что он ездил на фотосессию... Когда его начали расспрашивать он и говорит: "а что тут
+                такого,
+                возьмите и запишитесь к Ане. Ничего сложного, она обязательно Вас сфотографирует... ")) Спасибо за
+                фотосет!С
+                Вами уже как-то спокойно на фотосете. Доверие Вашей работе присутствует, уверенность, комфорт.</p>
+            </swiper-slide>
+            <swiper-slide>
+              <h3 class="name-feed">Евгения</h3>
+              <p>Я в шоке!!! Такой красивой я ещё не была ни на одной фотосессии! Спасибо Вам огромное за чудесные
+                фотографии
+                и за поднятую мою самооценку.Очень рада нашему знакомству, Вы очень позитивный человек и приятная
+                девушка!
+              </p>
+            </swiper-slide>
+            <swiper-slide>
+              <h3 class="name-feed">Светлана</h3>
+              <p>Наверное редко можно увидеть свои чувства и эмоции со стороны, увидеть не картинку, не фото, а именно
+                чувства!!! Спасибо, Аня!!! От всей души! Ты подарила нам счастье!!!Аня, благодарю тебя за возможность
+                быть
+                твоей клиенткой. За лёгкость, за простые идеи, за прекрасное настроение, а в итоге и за красивые
+                фотографии.
+                Афанасий, без преувеличения, ты- фотограф, снимающий </p>
+            </swiper-slide>
+            <swiper-slide>
+              <h3 class="name-feed">Татьяна</h3>
+              <p>Спасибо за позитивную съемку и хорошее настроение!Илья сегодня весь вечер рекламирует Ваши
+                услуги.Рассказывая
+                родственникам, что он ездил на фотосессию... Когда его начали расспрашивать он и говорит: "а что тут
+                такого,
+                возьмите и запишитесь к Ане. Ничего сложного, она обязательно Вас сфотографирует... ")) Спасибо за
+                фотосет!С
+                Вами уже как-то спокойно на фотосете. Доверие Вашей работе присутствует, уверенность, комфорт.</p>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </section>
+    <!-- Блок контактов -->
+    <section id="contact-id" class="container ">
+      <h2 class="contact-title">Контакты</h2>
+      <div class="contacts gap-medium text-white fl jc-с fw-w">
+        <div class="block-contact gap-small fl fd-col jc-sb ai-c ta-c">
+          <img src="assets/img/иконки/mail.png" class="img " alt="">
+
+          <p>MAIL</p>
+          <p>afanasiyprostouvelir@gmail.com</p>
+
+        </div>
+
+        <div class="border-center"></div>
+        <div class="block-contact gap-small fl fd-col jc-sb ai-c ta-c ">
+          <img src="assets/img/иконки/call.png" class="img " alt="">
+          <p>CALL</p>
+          <p>+7 (777) 454 99 88</p>
+        </div>
+        <div class="border-center"></div>
+        <div class="block-contact gap-small fl fd-col jc-sb ai-c ta-c ">
+          <img src="assets/img/иконки/search.png" class="img" alt="">
+          <p>FIND ME</p>
+          <p>ул. Ленина, 44 </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- футер -->
+  <footer class="container">
+    <div class="footer-one text-white fl jc-sb fw-w">
+      <div class="fl footer-one">
+        <p>afanasiyprostouvelir@gmail.com</p>
+        <p>+7 (777) 454 99 88</p>
+      </div>
+      <div class="social-link fl gap-medium">
+        <div>
+          <img src="assets/img/social/telegram.png" alt="">
+        </div>
+        <div>
+          <img src="assets/img/social/vk.png" alt="">
+        </div>
+        <div>
+          <img src="assets/img/social/ws.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>
